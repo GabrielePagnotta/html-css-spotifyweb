@@ -3,3 +3,204 @@
     padding:0;
     box-sizing: border-box;
 }
+
+
+
+/* UTILITIES */
+.flex{
+    display:flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+
+
+
+
+/* STRUCTURE */
+
+.main-container{
+    width:100vw;
+    height:100vh;
+    background-color: gray;
+}
+
+.song-container{
+    flex-grow: 1;
+    background-color: green;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    
+    
+}
+
+.side-bar{
+    width:15%;
+    height:90%;
+    background-color: blueviolet;
+}
+
+.header-container{
+    background-color: rgb(0, 0, 0,0.3);
+    justify-content: flex-end;
+    padding:20px;
+    position: sticky;
+    
+}
+
+.footer-container{
+    width:100%;
+    height:10%;
+    background-color: blue;
+    justify-content: space-between;
+    
+}
+
+
+/* CONTENT */
+
+.logo-big{
+    width: 70%;
+    padding:10px;
+   
+}
+
+.container-logo{
+    width: 100%;
+    background-color:red;
+    
+
+}
+
+
+.header-text{
+text-align: right;
+color:white;
+border:1px solid white;
+border-radius: 50px;
+}
+
+.nav{
+    width:100%;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+.songs{
+    width: 100%;
+    height:10%;
+    background-color: aquamarine;
+}
+
+
+.nav-text{
+    padding:5px;
+    font-size: 1.2rem;
+}
+
+.squares{
+    width:calc(100%/6 - 10px);
+    margin:0 auto;
+    height:10%;
+    background-color: brown;
+}
+
+.squares-2{
+    width:16%;
+    height:50px;
+    margin:5px;
+    background-color: brown;
+}
+
+.footer-box{
+    width:20%;
+    background-color: cornflowerblue;
+}
+
+
+.footer-box-2{
+    width:40%;
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (min-width:426px)
+and (max-width:1024px){
+    .squares{
+        width:calc(100%/4 - 10px);
+        margin:0 5px;
+        height:10%;
+        background-color: brown;
+    }
+    .squares-2{
+        width:24%;
+        margin:0 5px;
+        height:10%;
+        background-color: brown;
+    }
+
+    
+}
+
+@media screen and (min-width:267px) and (max-width:425px){
+    .squares{
+        width:calc(100%/2 - 10px);
+        margin:0 5px;
+        height:10%;
+        background-color: brown;
+    }
+
+    .squares-2{
+        width:calc(100%/2);
+        height:10%;
+        margin:0 5px;
+        background-color: brown;
+    }
+
+    .side-bar{
+        width:5%;
+        height:90%;
+        background-color: blueviolet;
+    }
+}
+
+    @media screen and (min-width:1024px){
+        .squares-2{
+            width:20%;
+            height:10%;
+            margin:0 5px;
+            background-color: brown;
+        }
+
+        .songs{
+            width: 100%;
+            height:10%;
+            background-color: aquamarine;
+        }
+}
