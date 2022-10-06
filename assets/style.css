@@ -32,6 +32,21 @@
     justify-content: flex-end;
 }
 
+.margin{
+margin-top:30px;
+}
+
+.format-song-title{
+    color:white;
+    text-align: center;
+}
+
+.format-song-title-2{
+color: gray;
+text-align: center;
+margin:5px;
+}
+
 
 
 
@@ -45,7 +60,7 @@
 }
 
 .song-container{
-    width:85%;
+    flex:9;
     height:100%;
     background-color: green;
     flex-direction: column;
@@ -56,16 +71,17 @@
 }
 
 .side-bar{
-    width:15%;
+    flex:1;
     height:100%;
     background-color: blueviolet;
 }
 
 .header-container{
-    background-color: rgb(0, 0, 0,0.3);
+    background-color: rgb(0, 0, 0,0.5);
     justify-content: flex-end;
     padding:20px;
     position: sticky;
+    top:0;
     
 }
 
@@ -141,7 +157,7 @@ border-radius: 50px;
 
 .img{
     width:100%;
-    height:100%;
+    object-fit: contain;
 
 }
 
@@ -175,7 +191,7 @@ and (max-width:1024px){
     
 }
 
-@media screen and (min-width:267px) and (max-width:425px){
+@media screen and (min-width:55px) and (max-width:425px){
     .squares{
         width:calc(100%/2 - 10px);
         margin:0 5px;
@@ -189,18 +205,19 @@ and (max-width:1024px){
     }
 
     .side-bar{
-        width:15%;
+        flex:1;
         height:100%;
         background-color: blueviolet;
     }
 
     .song-container{
-        width:85%;
+        flex:1;
         height:100%;
         background-color: green;
         flex-direction: column;
         justify-content: flex-start;
         overflow-y: scroll;
+    }
 }
 
     @media screen and (min-width:1024px){
@@ -214,4 +231,7 @@ and (max-width:1024px){
             width: 100%;
             background-color: aquamarine;
         }
+
+        
+
 }
