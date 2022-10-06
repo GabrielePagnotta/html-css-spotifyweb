@@ -69,6 +69,7 @@ margin:5% 5%;
 
 .song-container{
     flex:9;
+    height: 100%;
     background-color: green;
     flex-direction: column;
     justify-content: flex-start;
@@ -279,6 +280,7 @@ and (max-width:1024px){
 
     .song-container{
         flex:1;
+        height:100vh;
         background-color: green;
         flex-direction: column;
         justify-content: flex-start;
