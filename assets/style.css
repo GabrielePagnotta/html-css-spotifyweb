@@ -13,7 +13,7 @@
 
 .wrap{
     flex-wrap: wrap;
-    justify-content: flex-start;
+    
 }
 
 .column{
@@ -45,18 +45,19 @@
 }
 
 .song-container{
-    flex-grow: 1;
+    width:85%;
+    height:100%;
     background-color: green;
     flex-direction: column;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-y: scroll;
     
     
 }
 
 .side-bar{
     width:15%;
-    height:90%;
+    height:100%;
     background-color: blueviolet;
 }
 
@@ -75,9 +76,6 @@
     justify-content: space-between;
     
 }
-
-
-/* CONTENT */
 
 .logo-big{
     width: 70%;
@@ -108,7 +106,6 @@ border-radius: 50px;
 
 .songs{
     width: 100%;
-    height:10%;
     background-color: aquamarine;
 }
 
@@ -121,13 +118,12 @@ border-radius: 50px;
 .squares{
     width:calc(100%/6 - 10px);
     margin:0 auto;
-    height:10%;
     background-color: brown;
+    object-fit: contain;
 }
 
 .squares-2{
     width:16%;
-    height:50px;
     margin:5px;
     background-color: brown;
 }
@@ -143,6 +139,18 @@ border-radius: 50px;
     background-color: cornflowerblue;
 }
 
+.img{
+    width:100%;
+    height:100%;
+
+}
+
+.title{
+    height:70px;
+    background-color: bisque;
+}
+
+
 
 
 
@@ -154,14 +162,13 @@ border-radius: 50px;
 and (max-width:1024px){
     .squares{
         width:calc(100%/4 - 10px);
-        margin:0 5px;
-        height:10%;
+        margin:5px 5px;
+        
         background-color: brown;
     }
     .squares-2{
         width:24%;
         margin:0 5px;
-        height:10%;
         background-color: brown;
     }
 
@@ -172,35 +179,39 @@ and (max-width:1024px){
     .squares{
         width:calc(100%/2 - 10px);
         margin:0 5px;
-        height:10%;
         background-color: brown;
     }
 
     .squares-2{
         width:calc(100%/2);
-        height:10%;
         margin:0 5px;
         background-color: brown;
     }
 
     .side-bar{
-        width:5%;
-        height:90%;
+        width:15%;
+        height:100%;
         background-color: blueviolet;
     }
+
+    .song-container{
+        width:85%;
+        height:100%;
+        background-color: green;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: scroll;
 }
 
     @media screen and (min-width:1024px){
         .squares-2{
-            width:20%;
-            height:10%;
+            width:16%;
             margin:0 5px;
             background-color: brown;
         }
 
         .songs{
             width: 100%;
-            height:10%;
             background-color: aquamarine;
         }
 }
