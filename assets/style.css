@@ -260,6 +260,7 @@ font-size: 0.8rem;
 .title-song-player{
     color:white;
     font-size: 1rem;
+    margin-top: 50%;
 }
 
 .img{
@@ -268,10 +269,17 @@ font-size: 0.8rem;
 
 }
 
+.img-2{
+    width:100%;
+    
+}
+
+
 .cont{
     width:calc(100%/3);
-    background-color: coral;
-    border: 1px solid black;
+    height:100%;
+    /* background-color: coral; */
+    /* border: 1px solid black; */
     padding-left: 5px;
     padding-right: 10px;
     flex-direction: column;
@@ -304,8 +312,6 @@ font-size: 0.8rem;
 .fa-user{
     font-size: 0.8rem;
     margin-left:5%;
-    margin-top: 10px;
-    padding:5px;
     background-color: gray;
     border-radius: 50%;
     color:white;
@@ -376,7 +382,7 @@ font-size: 0.8rem;
     justify-content: center;
 }
 
-.footer-box :last-child{
+.wth{
 width:30%;
 }
 
@@ -415,6 +421,7 @@ width:30%;
 
     .nav{
         width:100%;
+        height:100%;
         /* background-color: yellowgreen; */
     
     }
@@ -443,9 +450,7 @@ width:30%;
     .bar{
         width:40%;
     }
-    .fa-solid{
-        margin:10px;
-    }
+    
 
 
 
@@ -477,6 +482,7 @@ width:30%;
 
     .song-container{
         flex:1;
+        height:100%;
         background-color: #141922;
         flex-direction: column;
         justify-content: flex-start;
@@ -518,14 +524,16 @@ width:30%;
         
     }
 
-    .img-2{
-        width:50px;
+    .fa-desktop{
+        margin:20px;
     }
 
-    .footer-box{
-        align-items: center;
-    }
+    
+    .fa-solid{
+        margin:10px;
 
+  
+    }
     .cont{
         padding-top:20px;
     }
@@ -538,9 +546,7 @@ width:30%;
         width:20%;
     }
 
-    .fa-solid{
-        margin:10px;
-    }
+   
 
 
     
@@ -579,16 +585,14 @@ width:30%;
             object-fit: contain;
         }
 
-        .img-2{
-            width:100%;
-        }
+        
 
         .bar{
             width:80%;
         }
         
         .fa-solid{
-            margin:20px 10px;
+            margin:5px 10px;
 
         }
 
