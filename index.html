@@ -5,50 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Spotify</title>
 </head>
 <body>
     <section class="main-container flex wrap">
         <div class="side-bar flex">
             <div class="container-logo">
-               <img class="logo-big" src="./assets/img/logo.svg" alt=""> 
+               <img class="logo-big display" src="./assets/img/logo.svg" alt=""> 
+               <img class="logo-small display-reveal" src="./assets/img/logo-small.svg" alt="">
                <div class="list">
                 <ul>
-                    <li class="format-list gray "><i class="fa-solid fa-house"></i>home</li>
-                    <li class="format-list gray"><i class="fa-solid fa-magnifying-glass"></i>cerca</li>
-                    <li class="format-list gray"><i class="fa-solid fa-magnifying-glass"></i>La mia libreria</li>
+                    <li class="format-list gray "><i class="fa-solid fa-house"></i><span class="display">home</span></li>
+                    <li class="format-list gray"><i class="fa-solid fa-magnifying-glass"></i><span class="display">cerca</span></li>
+                    <li class="format-list gray"><i class="fa-solid fa-magnifying-glass"></i><span class="display">La mia libreria</span></li>
     
                 </ul>
-
-                <div class="playlist">PLAYLIST
+                </div>
+                
+                <div class="playlist display">PLAYLIST
                     <ul>
-                        <li class="gray"><i class="fa-solid fa-plus margin-2 gray margin-2"></i>Crea playlist</li>
-                        <li class="gray margin-2">Nuova playlist</li>
+                        <li class="gray"><i class="fa-solid fa-plus gray margin-2"></i>Crea playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+                        <li class="gray margin-2 font-size">Nuova playlist</li>
+
                          
                     </ul>
                 </div>
-               </div>
+               
             </div>   
             <div class="footer-side">
-                <div><i class="fa-solid fa-arrow-down"></i><p id="inst">installa app</p></div>
+                <div><i class="fa-solid fa-arrow-down"></i><p class="inst display">installa app</p></div>
                 <hr>
-                <div><i class="fa-solid fa-user"></i><p id="john">John Dose</p></div>
+                <div><i class="fa-solid fa-user"></i><p class="john display">John Dose</p></div>
             </div>  
         </div>
-        <div class="song-container flex ">
+        <div class="song-container flex">
             <div class="header-container flex">
-                <p class="header-text">dsdsdsdsdsd</p>
+                <p class="header-text">EFFETTUA L'UPGRADE</p>
             </div>
-            <div class="nav">
-                <span class="nav-text">text</span>
-                <span class="nav-text">text</span>
-                <span class="nav-text">text</span>
-                <span class="nav-text">text</span>
-                <span class="nav-text">text</span>
-                <span class="nav-text">text</span>
+            <div class="nav flex wrap justify-center">
+                <div>
+                <span class="nav-text gray">IN EVIDENZA</span>
+                <span class="nav-text gray">PODCAST</span>
+                <span class="nav-text gray">CLASSIFICHE</span>
+                <span class="nav-text gray">GENERI E MOOD</span>
+                <span class="nav-text gray">NUOVE USCITE</span>
+                <span class="nav-text gray">SCOPRI</span>
             </div>
-            <h1>ciao ao tutti</h1>
+            </div>
+            <h1 class="format-big-title">Recently played</h1>
             <div class="songs flex wrap ">
                 <div class="squares">
                     <img class="img" src="./assets/img/metal_lifting.jpg" alt="">
@@ -87,7 +98,8 @@
                 </div>
             </div>
 
-            <div class="margin">ciao ao tutti</div>
+            <h1 class="format-big-title">Creato per john Doe</h1>
+            <p class="gray margin-2">Più ascolti, più accurati saranno i suggerimenti</p>
             <div class="songs flex">
                 <div class="squares-2">
                     <img class="img" src="./assets/img/radar.jpeg" alt="">
@@ -97,12 +109,15 @@
                     <img class="img" src="./assets/img/mixdaily.jpeg" alt="">
                 </div>
             </div>
-            <p class="title">ciao ao tutti</p>
+            <p class="format-big-title">Artisti più popolari</p>
+            <p class="gray margin-2">Più ascolti, più accurati saranno i suggerimenti</p>
             <div class="songs flex">
                 <div class="squares-2">
-                    <img class="img" src="./assets/img/stranger.jpeg" alt="">
+                    <img class="img-profile radius" src="./assets/img/youg.jpeg" alt="">
                 </div>
-                <div class="squares-2"></div>
+                <div class="squares-2">
+                    <img class="img-profile radius" src="./assets/img/einaudi.jpeg" alt="">
+                </div>
             </div>
             </div>
         <div class="footer-container flex">
